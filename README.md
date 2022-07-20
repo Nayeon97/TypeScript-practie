@@ -1,1 +1,1 @@
-# TypeScript-practie
+# TypeScript-pratice

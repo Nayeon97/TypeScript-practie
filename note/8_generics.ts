@@ -52,3 +52,21 @@ genericeLogoText<boolean>(true);
 
 // 함수를 정의할 때 타입을 비워놓고, 함수를 호출할 시점에  타입을 정의하는 방식 => 제네릭! 
 //  타입을 추론해서 반환값까지 ! 
+
+// 인터페이스에 제네릭을 선언하는 방법
+// interface Dropdown {
+//     value: string;
+//     selected: boolean;
+// }
+
+// const obj: Dropdown = {
+//     value: 'abc',
+//     selected: false
+// };
+
+interface Dropdown<T>{
+    value: T;
+    selected: boolean;
+}
+
+const obj: Dropdown<string> = { value: 'abc', selected: false}

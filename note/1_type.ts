@@ -1,5 +1,5 @@
 // TS 문자
-let str: string = 'hello';
+let str1: string = 'hello';
 
 //TS 숫자
 let num: number = 10;

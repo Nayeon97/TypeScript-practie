@@ -108,6 +108,11 @@ class AddressBook {
   /* ------------------------------------------------ */
 }
 
+var div = document.querySelector('div') as HTMLDivElement; // 타입 단언!  -> 유니온 타입에서 null 은 삭제! 
+// (method) ParentNode.querySelector<"div">(selectors: "div"): HTMLDivElement | null (+2 overloads)
+
+div?.innerText; // null 일수도 있기 때문에? 
+
 
 
 new AddressBook();

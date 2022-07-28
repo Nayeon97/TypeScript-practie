@@ -115,3 +115,12 @@ return itemOption;
 // getShoppingItemOption<string>('a');
 
 getShoppingItemOption('name');
+
+// promise
+
+function fetchItems(): Promise <string[]> {
+    let items = ['a', 'b', 'c'];
+    return new Promise(function (resolve){
+        resolve(items);
+    });
+}
